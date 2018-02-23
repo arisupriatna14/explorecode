@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="theme-color" content="#00aeff">
+
+    <title>ExploreJS || arisupriatna14</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- animation -->
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Squad theme css -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="color/default.css" rel="stylesheet">
+    <!-- Syntax highlight -->
+    <link rel="stylesheet" href="prismjs/prism.css">
+    <link rel="icon" type="image/png" href="img/js-logo.png">
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="load"></div>
+  </div>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+          <i class="fa fa-bars"></i>
+        </button>
+        <a href="index.html" class="navbar-brand">
+          <h1>Explore Code</h1><br>
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#intro">Home</a></li>
+          <li><a href="#learning">Learning</a></li>
+          <li><a href="tutorial.html">Tutorial</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div> <!-- navbar-collapse -->
+    </div> <!-- container -->
+  </nav>
+  
+  <!-- Section: Intro -->
+  <section id="intro" class="intro">
+
+    <div class="slogan">
+      <img src="img/js-logo.png" alt="" width="200">
+      <h2>Selamat Belajar Coders :)</h2>
+    </div>
+
+    <div class="page-scroll">
+      <br><br><br><br><br><br>
+    </div>
+  </section>
+  <!-- /Section: Intro-->
+
+  <!-- learning angularjs -->
+  <div class="container"><br>
+    <h3 align="center">Memulai Dengan AngularJS</h3>
+    <div class="col-md-12">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <strong>Memulai dengan AngularJS</strong>
+            </div>
+            <div class="panel-body">
+              <ul class="nav nav-tabs">
+                <li class="active">
+                  <a href="#1" data-toggle="tab">Materi</a>
+                </li>
+                <li>
+                  <a href="#2" data-toggle="tab">Diskusi</a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane fade in active" id="1">
+                  <br>
+                  <p>
+                    Buat file HTML baru dan tempelkan kode berikut ini:
+                  </p>
+<pre>
+  <code class="language-html">
+      &lt;!DOCTYPE>
+      &lt;htm ng-app>
+      &lt;head>
+        &lt;title>Hello, Angular&lt;/title>
+        &lt;script src="https://code.angularjs.org/1.5.8/angular.min.js">&lt;/script>
+        &lt;/head>
+      &lt;body ng-init="name='world'">
+        &lt;label>Nama&lt;/label>
+        &lt;input ng-model="name"/>
+        &lt;span>Hallo, {{ name }}!&lt;/span>
+        &lt;p ng-bind="name">&lt;/p>
+      &lt;/body>
+      &lt;/html>
+  </code>
+</pre>
+                    <p>
+                        Saat membuka file dengan browser, Anda akan melihat field input diikuti dengan teks Hello, World!. Mengedit Nilai input akan mengupdate teks secara real-time, tanpa perlu refresh keseluruhan halaman.
+                    </p>
+                    <strong>Bedah Kode :</strong>
+                    <ol>
+                      <li>
+                        Muat framework angular dari Jaringan Pengiriman Konten. <br>
+                        <pre><code class="language-html">&lt;script src="https://code.angularjs.org/1.5.8/angular.min.js">&lt;/script></code></pre>
+                      </li>
+                      <li>
+                          Tentukan dokumen HTML sebagai aplikasi Angular dengan perintah ng-app <br>
+                          <pre><code class="language-html">&lt;html ng-app></code></pre>
+                      </li>
+                      <li>
+                          Inisialisasi variabel nama menggunakan ng-init <br>
+                          <pre><code class="language-html">&lt;body ng-init="name='world'"></code></pre>
+                          Perhatikan bahwa ng-init hanya boleh digunakan untuk tujuan demonstrasi dan pengujian saja. Saat membangun aplikasi yang sebenarnya, pengendali harus menginisialisasi data.
+                      </li>
+                      <li>
+                          Bind data dari model ke tampilan pada kontrol HTML. Bind sebuah <br>
+                          <pre><code class="language-html">&lt;input></code></pre> ke nama properti dengan ng-model <br>
+                          <pre><code class="language-html">&lt;input ng-model="name"/></code></pre>
+                      </li>
+                      <li>
+                          Tampilkan konten dari model menggunakan kurung kurawal  {{}} <br>
+                          <pre><code class="language-html">&lt;span> Halo, {{name}} &lt;/span></code></pre>
+                      </li>
+                      <li>
+                          Cara lain untuk mengikat nama properti adalah menggunakan ng-bind bukan handlebars "{{}}" <br>
+                          <pre><code class="language-html">&lt;span ng-bind="name">&lt;/span></code></pre>
+                      </li>
+                    </ol>
+                    <br>
+                    <p>
+                        Tiga langkah terakhir membuat dua arah pengikatan data. Perubahan yang dilakukan pada input update model, yaitu
+                        tercermin dalam tampilan
+                        Ada perbedaan antara menggunakan setang dan ng-bind. Jika Anda menggunakan setang, Anda mungkin melihat yang sebenarnya
+                        Halo, {{name}} saat halaman dimuat sebelum ekspresi terpecahkan (sebelum data dimuat) sedangkan jika Anda menggunakannya
+                        ng-bind, itu hanya akan menampilkan data saat nama teratasi. Sebagai alternatif, perintah ng-cloak bisa digunakan
+                        untuk mencegah setang dipasang sebelum dikompilasi.
+                    </p>
+                </div> <!-- id = 1 -->
+
+                <div class="tab-pane fade" id="2">
+                  <div id="disqus_thread"></div>
+                </div> <!-- id = 2 -->
+
+              </div> <!-- tab-content -->
+            </div> <!-- panel-body -->
+        </div>
+    </div> <!-- col-md-12 -->
+
+    <center>
+      <a href="struktur-c++.html" class="btn btn-primary">Previous</a>
+      <a href="" class="btn btn-primary">Next</a>
+      <br><br>
+    </center>
+
+    <div class="col-md-4">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <strong>Test</strong>
+        </div>
+        <div class="panel-body">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, laudantium veritatis suscipit error hic inventore. Sunt iure libero, voluptate autem quod maxime neque voluptatibus sequi similique impedit, reprehenderit cupiditate id.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <strong>Test 2</strong>
+        </div>
+        <div class="panel-body">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe aut, fugit quod error rerum placeat odio necessitatibus ut eos porro. Ipsa, atque deleniti dignissimos maiores repellat modi numquam iste possimus?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <strong>Test 2</strong>
+        </div>
+        <div class="panel-body">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe aut, fugit quod error rerum placeat odio necessitatibus ut eos porro. Ipsa, atque deleniti dignissimos maiores repellat modi numquam iste possimus?
+          </p>
+        </div>
+      </div>
+    </div>
+  </div> <!-- container -->
+  <!-- /learning: AngularJS -->
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <div class="wow shake" data-wow-delay="0.4s">
+            <div class="page-scroll marginbot-30">
+              <a href="#intro" id="totop" class="btn btn-circle">
+                <i class="fa fa-angle-double-up animated"></i>
+              </a>
+            </div>
+          </div>
+          <p>&COPY; 2018 ExploreJS. All Right Reserved</p>
+          <ul class="company-social">
+            <li class="social-facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- Core JavaScript Files -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.scrollTo.js"></script>
+<script src="js/wow.min.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/custom.js"></script>
+<script src="contactform/contactform.js"></script>
+<!-- syntax higlight -->
+<script src="prismjs/prism.js"></script>
+<!-- Disqus -->
+<script>
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  /*
+  var disqus_config = function () {
+  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  */
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://explorecode-tk.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</body>
+</html>

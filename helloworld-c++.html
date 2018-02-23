@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ExploreJS || arisupriatna14</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- animation -->
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Squad theme css -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="color/default.css" rel="stylesheet">
+    <!-- Syntax highlight -->
+    <link rel="stylesheet" href="prismjs/prism.css">
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="load"></div>
+  </div>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+          <i class="fa fa-bars"></i>
+        </button>
+        <a href="index.html" class="navbar-brand">
+          <h1>Explore Code</h1><br>
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#intro">Home</a></li>
+          <li><a href="#learning">Learning</a></li>
+          <li><a href="tutorial.html">Tutorial</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div> <!-- navbar-collapse -->
+    </div> <!-- container -->
+  </nav>
+  
+  <!-- Section: Intro -->
+  <section id="intro" class="intro">
+
+    <div class="slogan">
+      <img src="img/js-logo.png" alt="" width="200">
+      <h2>Selamat Belajar Coders :)</h2>
+    </div>
+
+    <div class="page-scroll">
+      <br><br><br><br><br><br>
+    </div>
+  </section>
+  <!-- /Section: Intro-->
+
+  <!-- learning c++ -->
+  <div class="container"><br>
+    <h3 align="center">Hello World</h3>
+      <div class="col-md-12">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <strong>Hello World</strong>
+          </div>
+          <div class="panel-body">
+            <p>
+              Selamat datang coders. Pada kesempatan kali ini kita akan melanjutkan belajar pemrograman C++.
+              Dimana pada bab sebelumnya kita telah membahas struktur bahasa C++. Teman-teman coders pasti sudah paham ya strukturnya. Apabila belum silahkan pelajari kembali ke bagian <a href="struktur-c++.html">Struktur C++</a>. Apabila teman-teman coders sudah paham, mari kita membuat codingan sederhana menggunakan C++. Untuk saat ini, kita membuat program sederhana terlebih dahulu, agar teman-teman coders semuanya paham. Kita belajar step by step ya teman-teman coders. Santai tapi paham. hehe <br>
+              Oke, saatnya kita ngoding kawan :)
+            </p>
+
+            <div class="aler alert-info fade in">
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              <div class="panel-body">
+                <strong>Tips!</strong><br>
+                <b>
+                  Untuk kode program silahkan diketik ulang kembali pada teks editor teman-teman coders,hal ini dilakukan agar terbiasa mengetik kode program.
+                </b>
+              </div>
+            </div> <br>
+
+            <strong>Program C++ Sederhana</strong>
+            <ul class="nav nav-tabs">
+              <li class="active">
+                <a href="#1" data-toggle="tab">Kode Program</a>
+              </li>
+              <li>
+                <a href="#2" data-toggle="tab">Bedah Kode</a>
+              </li>
+              <li>
+                <a href="#3" data-toggle="tab">Diskusi</a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div id="1" class="tab-pane fade in active">
+                <br>
+<pre>
+  <code class="language-c++">
+    #include &lt;iostream>
+    using namespace std;
+    int main()
+    {
+      cout << "Hello, saya adalah program C++" << endl;
+    }
+  </code>
+</pre>
+
+<p>
+  Apabila sudah selesai mengetiknya, silahkan di save kode programnya dengan cara ctrl+s di keyboard dan beri nama kode programnya hello-world.cpp. .cpp adalah extensi untuk program C++.
+  Setelah di save programnya, klik icon compile & run atau F11 pada keyboard, otomatis program akan di compile dan langsung running.
+  <br>
+  Oke, untuk kesempatan kali ini sampai disini dulu materinya. Jika sudah paham silahkan ikuti materi selanjutnya, dan jika belum paham silahkan baca kembali materinya sampai benar-benar paham.
+  See you :)
+</p>
+
+              </div> <!-- id=1 -->
+              <div id="2" class="tab-pane fade">
+                <br>
+<pre>
+  Baris Pertama:
+  <code class="language-c++">
+    #include &lt;iostream>
+  </code>
+</pre>
+<p>
+  Kode diatas adalah file-header, pada dasarnya digunakan untuk menyatakan bahwa file dari program itu menggunakan pustaka (Library) yang memuat beberapa keyword dan fungsi. Digunakan untuk dapat menggunakan beberapa keyword atau fungsi yang kita butuhkan ke dalam file program yang ditulis, yang akan digunakan dalam pembuatan statement. 
+  Pernyataan yang diawali dengan menggunakan tanda pagar (#) disebut dengan Prepocessor Directive, pada contoh program diatas menggunakan prepocessor directive yang menyatakan “#include <iostream>” yang berarti bahwa kita akan menggunakan fungsi dari library “iostream (Input Output Stream)” yang merupakan standar library C++. 
+</p>
+
+<pre>
+  Baris kedua:
+  <code class="language-c++">
+    int main()
+  </code>
+</pre>
+<p>
+  Kode diatas merupakan fungsi (function) utama, fungsi yang akan dibaca oleh kompilator pertama kali secara otomatis, tidak akan ada function yang otomatis dibaca oleh kompilator kecuali fungsi utama “int main()”, fungsi utama bagaikan kepala dari sebuah program yang mengatur arah kompilator.
+</p>
+
+<pre> 
+  Baris ketiga:
+  <code class="language-c++">
+    { 
+      ....
+    }
+  </code>
+</pre>
+<p>
+  Kode diatas merupakan sebuah blok pembuka, blok memiliki sebuah pasangan yang dinamakan blok penutup, di dalam contoh program diatas penulis menaruh blok penutup di baris paling akhir dengan tanda “}”. Kedua blok tersebut menyatakan bahwa kode yang diapit oleh mereka adalah satu ruang lingkup (scope) dan menyatakan bahwa semua kode didalam blok tersebut merupakan definisi dari fungsi utama.
+</p>
+
+<pre>
+  Baris keempat :
+  <code class="language-c++">
+      cout << "Hello, saya adalah program C++" << endl;
+  </code>
+</pre>
+<p>
+  Kode diatas  adalah sebuah baris pernyataan (statement) dan merupakan definisi dari fungsi utama. cout merupakan bagian dari library &lt;iostream>. Berfungsi untuk mencetak sebuah kalimat “Hello, saya adalah program C++” pada layar hasil program.
+</p>
+
+              </div> <!-- id=2 -->
+
+              <div id="3" class="tab-pane fade">
+                <div id="disqus_thread"></div>
+              </div>
+            </div> <!-- tab-content -->
+          </div> <!-- panel-body --> 
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <center>
+    <a href="struktur-c++.html" class="btn btn-primary">Previous</a>
+    <a href="" class="btn btn-primary">Next</a>
+    <br><br>
+  </center>
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <div class="wow shake" data-wow-delay="0.4s">
+            <div class="page-scroll marginbot-30">
+              <a href="#intro" id="totop" class="btn btn-circle">
+                <i class="fa fa-angle-double-up animated"></i>
+              </a>
+            </div>
+          </div>
+          <p>&COPY; 2018 ExploreJS. All Right Reserved</p>
+          <ul class="company-social">
+            <li class="social-facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- Core JavaScript Files -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.scrollTo.js"></script>
+<script src="js/wow.min.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/custom.js"></script>
+<script src="contactform/contactform.js"></script>
+<!-- syntax higlight -->
+<script src="prismjs/prism.js"></script>
+<!-- Disqus -->
+<script>
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  /*
+  var disqus_config = function () {
+  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  */
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://explorecode-tk.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</body>
+</html>
